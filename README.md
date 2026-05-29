@@ -32,6 +32,15 @@ Crie estes secrets:
 - `EC2_USER`: usuario SSH da instancia, normalmente `ubuntu` quando a AMI for Ubuntu.
 - `EC2_SSH_KEY`: conteudo inteiro da chave `.pem` usada para acessar a instancia.
 
+Importante: deixe o usuario fora do `EC2_HOST`. Por exemplo:
+
+```text
+EC2_HOST=18.230.10.20
+EC2_USER=ubuntu
+```
+
+Se o deploy parar em `ssh-keyscan`, confirme tambem se a instancia esta ligada e se o Security Group libera entrada SSH na porta `22` para o runner do GitHub Actions.
+
 ## Preparacao unica no EC2
 
 Conecte na instancia e rode os comandos do arquivo `deploy/ec2-setup.sh` uma vez antes do primeiro deploy.
