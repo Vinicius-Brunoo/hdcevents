@@ -4,7 +4,7 @@
     <section class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div>
             <p class="text-sm font-semibold uppercase tracking-wide text-teal-200">Praticando parte 2</p>
-            <h1 class="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">Eventos cadastrados no Laravel1</h1>
+            <h1 class="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">Eventos cadastrados no Laravel12</h1>
             <p class="mt-5 text-lg leading-8 text-slate-300">
                 Home alterada para listar registros do banco, com data, upload de imagem, JSON e pagina de detalhes.
             </p>
