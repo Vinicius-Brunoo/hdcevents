@@ -4,7 +4,7 @@ set -euo pipefail
 APP_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$APP_DIR"
 
-mkdir -p storage/framework/cache/data storage/framework/sessions storage/framework/views storage/logs bootstrap/cache database
+mkdir -p storage/app/public/events storage/framework/cache/data storage/framework/sessions storage/framework/views storage/logs bootstrap/cache database
 
 if [ ! -f .env ]; then
     cp .env.example .env
