@@ -12,7 +12,8 @@ fi
 
 touch database/database.sqlite
 
-composer install --no-dev --prefer-dist --optimize-autoloader --no-interaction
+rm -rf vendor
+composer install --prefer-dist --no-interaction
 
 if ! grep -q '^APP_KEY=base64:' .env; then
     php artisan key:generate --force
