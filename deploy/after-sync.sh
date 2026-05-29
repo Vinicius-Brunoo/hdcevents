@@ -4,15 +4,11 @@ set -euo pipefail
 APP_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$APP_DIR"
 
-mkdir -p storage/app/public/events storage/framework/cache/data storage/framework/sessions storage/framework/views storage/logs bootstrap/cache database
+mkdir -p storage/app/public/events storage/framework/cache/data storage/framework/sessions storage/framework/views storage/logs bootstrap/cache
 
 if [ ! -f .env ]; then
     cp .env.example .env
 fi
-
-touch database/database.sqlite
-
-composer install --prefer-dist --no-interaction
 
 if ! grep -q '^APP_KEY=base64:' .env; then
     php artisan key:generate --force
