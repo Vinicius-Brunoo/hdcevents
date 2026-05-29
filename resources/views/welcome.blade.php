@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-       <title>HDC Events funcionando</title>
+       <title>HDC Events - Deploy atualizado</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -57,6 +57,18 @@
                             </nav>
                         @endif
                     </header>
+
+                    <section class="mb-8 rounded-lg border border-[#FF2D20]/30 bg-[#FF2D20]/10 p-6 text-center shadow-[0px_14px_34px_0px_rgba(255,45,32,0.12)] dark:border-[#FF2D20]/40 dark:bg-[#FF2D20]/15">
+                        <p class="text-sm font-semibold uppercase tracking-wide text-[#FF2D20]">
+                            Deploy automatico no EC2
+                        </p>
+                        <h1 class="mt-3 text-3xl font-semibold text-black dark:text-white">
+                            HDC Events atualizado para apresentacao
+                        </h1>
+                        <p class="mx-auto mt-4 max-w-2xl text-sm/relaxed text-black/70 dark:text-white/70">
+                            Alteracao publicada pelo GitHub Actions para demonstrar o fluxo completo de versionamento, deploy e servidor Laravel em producao.
+                        </p>
+                    </section>
 
                     <main class="mt-6">
                         <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
