@@ -26,6 +26,6 @@ php artisan route:cache
 php artisan view:cache
 
 if command -v sudo >/dev/null 2>&1; then
-    sudo chown -R "$USER":www-data storage bootstrap/cache database/database.sqlite
-    sudo chmod -R ug+rw storage bootstrap/cache database/database.sqlite
+    sudo chown -R "$USER":www-data storage bootstrap/cache
+    sudo chmod -R 775 storage bootstrap/cache
 fi
