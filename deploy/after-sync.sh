@@ -14,9 +14,6 @@ touch database/database.sqlite
 
 composer install --no-dev --prefer-dist --optimize-autoloader --no-interaction
 
-npm install --no-audit --no-fund
-npm run build
-
 if ! grep -q '^APP_KEY=base64:' .env; then
     php artisan key:generate --force
 fi

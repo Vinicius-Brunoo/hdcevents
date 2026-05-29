@@ -16,6 +16,11 @@ jobs:
       - name: Baixar codigo
         uses: actions/checkout@v4
 
+      - name: Build assets
+        run: |
+          npm ci
+          npm run build
+
       - name: Configurar SSH
         env:
           EC2_HOST: ${{ secrets.EC2_HOST }}
