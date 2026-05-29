@@ -12,7 +12,6 @@ fi
 
 touch database/database.sqlite
 
-rm -rf vendor
 composer install --prefer-dist --no-interaction
 
 if ! grep -q '^APP_KEY=base64:' .env; then
